@@ -8,7 +8,7 @@ There is no need to install, just download and use it in other programs.
 Also if you want to test you can run the test_main.py
 
 ```bash
-python3 ./example/directory/test_main.py
+python3 ./example/directory/test_wcount.py
 ```
 
 To download
@@ -35,5 +35,5 @@ from wcount import word_count
 
 Universidad de Mendoza
 
-Author: Anci V. Elio Valentino
+Author: Anci V. Elio Valentino (62197)
 
