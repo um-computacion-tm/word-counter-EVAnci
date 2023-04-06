@@ -6,8 +6,9 @@ def word_count(s):
     correct_s = ''
     # for every character in the string, remove (if exist), every 
     # punctuation or numbers. Then save it in correct_s
+    symbols = ('!"#$%&\'()*+,-./:;<=>?@[\]^_`{|}~)1234567890')
     for c in s:
-        if c not in '!"#$%&\'()*+,-./:;<=>?@[\]^_`{|}~)1234567890':
+        if c not in symbols:
             correct_s += c
     # split the string in a list using spaces as reference
     l = correct_s.lower().split(' ')
