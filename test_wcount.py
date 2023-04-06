@@ -15,6 +15,12 @@ class Test_W_Count(unittest.TestCase):
         output = word_count('')
         self.assertEqual(output, {})
 
+    def test_spaced_string(self):
+        input_value = 'hello        world'
+        output = word_count(input_value)
+        correct = {'hello':1, 'world':1}
+        self.assertEqual(output, correct)
+
     def test_easy_string(self):
         input_value = 'hello world hello world xd'
         output = word_count(input_value)
@@ -43,12 +49,12 @@ class Test_W_Count(unittest.TestCase):
     
     def test_difficult_string(self):
         input_value = '''\
-        This document is a guide & for installing Arch Linux using the live \
-        system booted from an in5stallation medium made from an official \
-        insta44llation image. The i0nstallation medium provides accessibility \
-        features w##hich are described () on the page Install Arch Linux with \
-        accessibility options. ".:; For alternative means of installation, see \
-        Category Installation process.'''
+        This document is a guide & for installiNg Arch Linux using the live \
+        sYstem booted from an in5stallation medium made from an official \
+        insta44llation image. The i0nstallAtion m3Edium provides accessibility \
+        features w##hich are described () oN the page Install Arch Linux with \
+        aCceSsiBility optiO0ns. ".:; For alternative means of installation, see \
+        Category InstaLlAtion process.'''
 
         output = word_count(input_value)
         
